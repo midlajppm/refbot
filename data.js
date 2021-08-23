@@ -1,3 +1,12 @@
+const admins = new Telegraf(process.env.admins);
+const bot = new Telegraf(process.env.BOT_TOKEN);
+const chanLink = new Telegraf(process.env.chanLink);
+const channel = new Telegraf(process.env.channel);
+const inviteLink = new Telegraf(process.env.inviteLink);
+const kh = new Telegraf(process.env.kh);
+const mongoLink = new Telegraf(process.env.mongoLink);
+const paymentsChan = new Telegraf(process.env.paymentsChan);
+/*
 module.exports = {
   token: 'bot token, string', // you can get it in @BotFather
   mongoLink: 'link to MongoDB - database, string', // e.g. Mongo Atlas
@@ -8,3 +17,4 @@ module.exports = {
   admins: ['admins', 'ids'],
   kh: 'developer`s id for errors sending'
 }
+*/
