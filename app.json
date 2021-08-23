@@ -1,0 +1,42 @@
+{
+    "name": "",
+    "description": "Telegram Bot to ...",
+    "keywords": [
+        "telegram"
+    ],
+    "repository": "https://github.com/",
+    "logo": "https://telegra.ph/file/dd7933d25477c161b7d52.png",
+    "success_url": "https://telegram.dog/xdbots",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Bot Token from @BotFather",
+            "required": true
+        },"mongoLink": {
+            "description": "link to MongoDB - database, string",
+            "required": true
+        },"channel": {
+            "description": "promoting channel`s id, string or number (begins with minus)",
+            "required": true
+        },"chanLink": {
+            "description": "invite link to chanel, string",
+            "required": true
+        },"paymentsChan": {
+            "description": "channel where to publish withdraw requests, string or number",
+            "required": true
+        },"inviteLink": {
+            "description": "t.me/${past here bot`s link}?start=params",
+            "required": true
+        },"admins": {
+            "description": "admins id",
+            "required": true
+        },"kh": {
+            "description": "developer`s id for errors sending",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/nodejs"
+        }
+    ]
+}
