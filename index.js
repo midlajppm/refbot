@@ -1,4 +1,6 @@
-const telegraf = require('telegraf')
+const { Telegraf } = require('telegraf');
+const axios = require('axios');
+const dotenv = require('dotenv');
 const config = require('./config')
 const data = require('./data')
 const mongo = require('mongodb').MongoClient
@@ -10,7 +12,7 @@ const Stage = require('telegraf/stage')
 const Scene = require('telegraf/scenes/base')
 const rateLimit = require('telegraf-ratelimit')
 const { text } = config
-const bot = new telegraf(data.token, {telegram: {webhookReply: false}})
+const bot = new Telegraf(process.env.BOT_TOKEN);
 let db 
 
 const buttonsLimit = {
